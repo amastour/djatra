@@ -14,7 +14,7 @@ env:
 # command to install depedencie
 install:
   - pip install -q  Django==$DJANGO 
-  - pip install -q -r requirements.txt 
+  - pip install -q -r requirement.txt 
 
 # command to run tests
-script: python manage.py test
+script: python manage.py test hero 
