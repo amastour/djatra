@@ -13,9 +13,8 @@ env:
 
 # command to install depedencie
 install:
-  - pip install -q  Django==$DJANGO --use-mirrors
-  - pip install -q . --use-mirrors
-  - pip install -q -r requirements.txt --use-mirrors
+  - pip install -q  Django==$DJANGO 
+  - pip install -q -r requirements.txt 
 
 # command to run tests
 script: python manage.py test
