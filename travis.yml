@@ -19,3 +19,7 @@ install:
 
 # command to run tests
 script: python manage.py test
+
+#deploy
+deploy:
+  provider: azure_web_apps
