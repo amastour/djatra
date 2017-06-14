@@ -118,4 +118,23 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-STATIC_URL = '/static/'
+TATIC_URL = '/static/'
+
+STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "statics"),
+)
+MEDIA_ROOT =  posixpath.join(*(BASE_DIR.split(os.path.sep) + ['media']))
+
+# URL that handles the media served from MEDIA_ROOT. Make sure to use a
+# trailing slash.
+# Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
+MEDIA_URL = '/media/'
+
+
+#LOGIN_LOGOUT_REDIRECTION
+LOGIN_REDIRECT_URL= '/'
+
+LOGIN_URL='/login/'
+
+LOGOUT_URL='/logout/'
